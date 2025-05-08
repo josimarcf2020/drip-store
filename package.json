@@ -10,8 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.6",
+=======
+>>>>>>> 6837e8dd32e1386e6e4a161d17fcbddda7b791fa
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
@@ -20,13 +23,19 @@
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react": "^4.4.1",
+<<<<<<< HEAD
     "autoprefixer": "^10.4.21",
+=======
+>>>>>>> 6837e8dd32e1386e6e4a161d17fcbddda7b791fa
     "eslint": "^9.25.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
+<<<<<<< HEAD
     "postcss": "^8.5.3",
     "tailwindcss": "^4.1.5",
+=======
+>>>>>>> 6837e8dd32e1386e6e4a161d17fcbddda7b791fa
     "vite": "^6.3.5"
   }
 }
