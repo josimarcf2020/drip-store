@@ -1,0 +1,16 @@
+#footer{
+    width: 1440px;
+    height: 454px;
+    display: flex;
+    background-color: var(--dark-gray);
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    #logo-container{
+        width: 253px;
+        height: 44px;
+        margin-top: 72px;
+        margin-left: 104px;
+        color: var(--text-color);
+    }
+}

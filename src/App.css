@@ -20,14 +20,14 @@
   width: 253px;
   height: 44px;
   display: flex;
-  color: #C92071;
+  color: var(--primary-color);
 }
 
 #vector{
   width: 44px;
   height: 44px;
   display: flex;
-  color: #C92071;
+  color: var(--primary-color);
   margin-top: 7px;
 }
 
@@ -44,7 +44,7 @@
   height: 129px;
   padding-top: 4px;
   display: flex;
-  color: #C92071;
+  color: var(--primary-color);
 }
 
 #cabecalho{
@@ -70,7 +70,7 @@
       height: 60px;
       border-radius: 8px;
       padding-right: 40px;
-      background-color: --dark-gray-3;
+      background-color: var(--light-gray-3);
     }
 
   }
@@ -101,7 +101,7 @@
   width: 114px;
   height: 40px;
   border-radius: 8px;
-  background-color: #C92071;
+  background-color: var(--primary-color);
   color: #FFFFFF;
   font-size: 16px;
   font-weight: 700;
@@ -113,5 +113,14 @@
   width: 33px;
   height: 29px;
   margin-top: 47px;
+
+}
+
+#footer{
+  width: 1440px;
+  height: 454px;
+  display: flex;
+  background-color: var(--dark-gray);
+  gap: 30px;
 
 }
