@@ -1,6 +1,7 @@
 import vectorImage  from '../assets/images/vector.svg'
 import buyImage     from '../assets/images/buy.svg'
 import searchImage  from '../assets/images/search.svg'
+import { Logo } from './Logo';
 
 export const Header = () => {
     return (
@@ -8,18 +9,11 @@ export const Header = () => {
             <div id="cabecalho">
                 <div id="linha1">
                     <div id='logoPesquisa'>
-                        <div id="logo">
-                            <div id="vector">
-                                <img src={vectorImage} alt="Imagem de Vector" />
-                            </div>
-                            <div id="marca">
-                                <p>Drip-store</p>
-                            </div>
-                        </div>
+                        <Logo />
                         <div id="pesquisa">
                             <div id="inputPesquisa">
                                 <div>
-                                    <input class="form-control me-2 bg-gray-100" type="search" placeholder="Pesquisar produto" aria-label="Search"/>
+                                    <input class="form-control me-2" type="search" placeholder="Pesquisar produto" aria-label="Search"/>
                                 </div>
                                 <div id='searchIcon'>
                                     <img src={searchImage} alt="Imagem de uma lupa" />

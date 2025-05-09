@@ -1,7 +1,6 @@
-. {
+* {
   margin: 0;
   padding: 0;
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 #header{
@@ -37,6 +36,7 @@
   height: 44px;
   display: flex;
   font-size: 36.4px;
+  font-weight: 600;
 }
 
 #logoPesquisa{
@@ -70,6 +70,7 @@
       height: 60px;
       border-radius: 8px;
       padding-right: 40px;
+      background-color: --dark-gray-3;
     }
 
   }
