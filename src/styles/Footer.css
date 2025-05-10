@@ -7,18 +7,19 @@
     margin-bottom: 100px;
     color: var(--text-color);
     display: flex;
-    padding-left: 104px;
     padding-top: 72px;
 
     #logo-container{
         width: 253px;
         height: 44px;
+        margin-left: 104px;
     }
 
     #text{
         width: 307px;
         height: 78px;
         margin-top: 79px;
+        margin-left: 104px;
         font-size: 16px;
         font-weight: 400;
     }
@@ -26,6 +27,7 @@
     #icons{
         width: 124.12px;
         height: 20.53px;
+        margin-left: 104px;
         margin-top: 79px;
         left: 104px;
         display: flex;
@@ -57,16 +59,24 @@
     width: 135px;
     height: 278px;
     margin-left: 612px;    
-
-    #group8035{
-        padding-bottom: 30px;
-    }
     
     #group8035-1{
         padding-bottom: 30px;
     }
 }
 
+.informationsTitle{
+    padding-bottom: 30px;
+}
+
+.informations{
+    a{
+        text-decoration: none;
+        color: var(--white);
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
 
 #coluna2{
     position: absolute;
@@ -74,7 +84,7 @@
     height: 240px;
     margin-left: 849px;
 
-    #group8034{
+    #informationsTitle{
         padding-bottom: 30px;
     }
 
@@ -102,6 +112,7 @@
     position: absolute;
     width: 1240px;
     height: 1px;
+    margin-left: 104px;
     margin-top: 334px;
     opacity: 30%;
     background-color: var(--white);

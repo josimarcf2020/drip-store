@@ -1,7 +1,7 @@
 import vectorImage from '../assets/images/vector.svg'
 import "../styles/Logo.css"
 
-export const Logo = ({ className}) => {
+export const Logo = ({ className }) => {
     return (
         <div id="logo" className={className}>
             <div id="vector">
