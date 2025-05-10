@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    position: absolute;  
+    width: 1440px;
+    height: 192px;
+    display: flex;
+    margin-top: 0px;
+    gap: 20px;
+
+    #cabecalho{
+        position: absolute;
+        width: 993px;
+        height: 129px;
+        padding-top: 34px;
+        margin-left: 100px;
+        display: block;
+
+        #linha1{
+            display: flex;
+            height: 60px;
+        
+            #logoPesquisa{
+                width: 993px;
+                height: 129px;
+                padding-top: 4px;
+                display: flex;
+                color: var(--primary-color);
+        
+                #pesquisa{
+                    display: flex;
+                    width: 709px;
+                    height: 60px;
+                    justify-content: space-between;
+                    position: relative;
+                    
+                    #inputPesquisa{
+                        display: flex;
+                        
+                        input{
+                            width: 559px;
+                            height: 60px;
+                            border-radius: 8px;
+                            padding-right: 40px;
+                            background-color: var(--light-gray-3);
+                        }
+                        
+                        #searchIcon{
+                            width: 18.76px;      
+                            height: 19.22px;
+                            position: absolute;
+                            top: 15px;
+                            left: 520px;
+                        }
+                    
+                    }
+                    
+                }
+        
+            }
+        
+        }
+
+        #linha2 nav{
+            width: 423px;
+            height: 29px;
+            margin-top: 45px;
+            display: flex; 
+        }
+            
+    }
+
+    #btEntrarCarrinho{
+        position: absolute;
+        display: flex;
+        width: 200px;
+        height: 29px;
+        margin-top: 45px;
+        margin-left: 1100px;
+        justify-content: space-between;
+
+        #btEntrar{
+            display: flex;
+            position: absolute;
+            width: 114px;
+            height: 40px;
+            border-radius: 8px;
+            background-color: var(--primary-color);
+            color: #FFFFFF;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+            justify-content: center;
+        }
+
+        #carrinhoDeCompras{
+            width: 33px;
+            height: 29px;
+        }
+
+    }
+
+}
+
+
+
+
+  
+
+  
+
+  

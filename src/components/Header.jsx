@@ -1,4 +1,4 @@
-import vectorImage  from '../assets/images/vector.svg'
+import "../styles/Header.css"
 import buyImage     from '../assets/images/buy.svg'
 import searchImage  from '../assets/images/search.svg'
 import { Logo } from './Logo';
@@ -51,7 +51,7 @@ export const Header = () => {
             </div>
             <div id="btEntrarCarrinho">
                 <div id="botaoEntrar">
-                    <button id='btEntrar'>Entrar</button>            
+                    <button id="btEntrar">Entrar</button>            
                 </div>
                 <div id="carrinhoDeCompras">
                     <img src={buyImage} alt="Imagem de carrinho de compras" />

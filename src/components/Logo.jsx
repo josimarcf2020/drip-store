@@ -1,8 +1,9 @@
 import vectorImage from '../assets/images/vector.svg'
+import "../styles/Logo.css"
 
-export const Logo = () => {
+export const Logo = ({ className}) => {
     return (
-        <div id="logo">
+        <div id="logo" className={className}>
             <div id="vector">
                 <img src={vectorImage} alt="Imagem de Vector" />
             </div>
