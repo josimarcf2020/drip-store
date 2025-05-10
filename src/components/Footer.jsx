@@ -3,8 +3,11 @@ import InstaImage from "../assets/images/instagram.svg"
 import LinkedImage from "../assets/images/linkedin.svg"
 import TwitterImage from "../assets/images/twitter-x.svg"
 import { Logo } from "./Logo"
+import { Informations } from "./Informations"
 
 export const Footer = () => {
+    const informacoes = [{"text":"Sobre Drip-Store", "link":"/sobre"}, {"text":"Segurança", "link":"/seguranca"}, {"text":"Whishlist", "link":"/wishlist"}, {"text":"Blog", "link":"/blog"}, {"text":"Trabalhe conosco", "link":"/trabalhe-conosco"}, {"text":"Meus Pedidos", "link":"/meus-pedidos"}]
+    const informacoes1 = [{"text":"Camisetas", "link":"/camisetas"}, {"text":"Calças", "link":"/calcas"}, {"text":"Bonés", "link":"/bones"}, {"text":"Headphones", "link":"/headphones"}, {"text":"Tênis", "link":"/tenis"}]
     return (
         <div id='footer'>
             <div id="col1">
@@ -15,48 +18,29 @@ export const Footer = () => {
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium unde mollitia error, perspiciatis fugiat neque nobis. Quas blanditiis illum porro cupiditate, vel, natus molestias rerum deleniti nisi, atque accusamus repellat.</p>
                 </div>
                 <div id="icons">
-                    <div id="icon1" class="icon">
+                    <div id="icon1" className="icon">
                         <a href="https://www.instagram.com/"><img src={InstaImage} alt="Instagram" className="whiteIcon"/></a>
                     </div>
-                    <div id="icon2" class="icon">
+                    <div id="icon2" className="icon">
                         <a href="https://www.linkedin.com/"><img src={LinkedImage} alt="Facebook" className="whiteIcon"/></a>
                     </div>
-                    <div id="icon3" class="icon">
+                    <div id="icon3" className="icon">
                         <a href="https://twitter.com/"><img src={TwitterImage} alt="Twitter" className="whiteIcon"/></a>
                     </div>
                 </div>
             </div>
             <div id="grupos">
-                <div class='grupo' id="coluna1">
-                    <div id="group8035">
-                        <strong>Informação</strong>
-                    </div>
-                    <div id="group8035-1">
-                        <p>Sobre Drip-Store</p>
-                        <p>Segurança</p>
-                        <p>Whishlist</p>
-                        <p>Blog</p>
-                        <p>Trabalhe conosco</p>
-                        <p>Meus Pedidos</p>
-                    </div>
+                <div className='grupo' id="coluna1">
+                    < Informations title="Informações" informations={ informacoes } />
                 </div>
-                <div class='grupo' id="coluna2">
-                    <div id="group8034">
-                        <strong>Categorias</strong>
-                    </div>
-                    <div id="group8034-1">
-                        <p>Camisetas</p>
-                        <p>Calças</p>
-                        <p>Bonés</p>
-                        <p>Headphones</p>
-                        <p>Tênis</p>
-                    </div>
+                <div className='grupo' id="coluna2">
+                    < Informations title="Categorias" informations={ informacoes1 } />
                 </div>
                 <div id="coluna3" className="grupo">
-                    <div id="group53512">
+                    <div className="informationsTitle">
                         <strong>Contato</strong>
                     </div>
-                    <div id="group53512-1">
+                    <div className="informations">
                         <p>Av. Santos Dumont, 1510 - 1º andar - Aldeota, Fortaleza-CE, 60150-161</p>
                         <p>(85) 3051-3411</p>
                     </div>
@@ -64,7 +48,7 @@ export const Footer = () => {
             </div>
             <div id="linha"><hr /></div>
             <div  id="direitos">
-                <p>©2025 Josimar Ferreira</p>
+                <p>©{new Date().getFullYear()} Josimar Ferreira</p>
             </div>
         </div>
     )
