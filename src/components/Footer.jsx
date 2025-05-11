@@ -1,15 +1,26 @@
 import "../styles/Footer.css"
-import InstaImage from "../assets/images/instagram.svg"
-import LinkedImage from "../assets/images/linkedin.svg"
-import TwitterImage from "../assets/images/twitter-x.svg"
 import { Logo } from "./Logo"
 import { Informations } from "./Informations"
+import { IconsSocialMedia } from "./IconsSocialMedia"
 
 export const Footer = () => {
-    const informacoes = [{"text":"Sobre Drip-Store", "link":"/sobre"}, {"text":"Segurança", "link":"/seguranca"}, {"text":"Whishlist", "link":"/wishlist"}, {"text":"Blog", "link":"/blog"}, {"text":"Trabalhe conosco", "link":"/trabalhe-conosco"}, {"text":"Meus Pedidos", "link":"/meus-pedidos"}]
-    const informacoes1 = [{"text":"Camisetas", "link":"/camisetas"}, {"text":"Calças", "link":"/calcas"}, {"text":"Bonés", "link":"/bones"}, {"text":"Headphones", "link":"/headphones"}, {"text":"Tênis", "link":"/tenis"}]
+    const informacoes = [
+        {"text":"Sobre Drip-Store", "link":"/sobre"}, 
+        {"text":"Segurança", "link":"/seguranca"}, 
+        {"text":"Whishlist", "link":"/wishlist"}, 
+        {"text":"Blog", "link":"/blog"}, 
+        {"text":"Trabalhe conosco", "link":"/trabalhe-conosco"}, 
+        {"text":"Meus Pedidos", "link":"/meus-pedidos"}
+    ]
+    const informacoes1 = [
+        {"text":"Camisetas", "link":"/camisetas"}, 
+        {"text":"Calças", "link":"/calcas"}, 
+        {"text":"Bonés", "link":"/bones"}, 
+        {"text":"Headphones", "link":"/headphones"}, 
+        {"text":"Tênis", "link":"/tenis"}
+    ]
     return (
-        <div id='footer'>
+        <footer id='footer'>
             <div id="col1">
                 <div id="logo-container">
                     < Logo className="whiteIcon"/>                
@@ -18,15 +29,7 @@ export const Footer = () => {
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium unde mollitia error, perspiciatis fugiat neque nobis. Quas blanditiis illum porro cupiditate, vel, natus molestias rerum deleniti nisi, atque accusamus repellat.</p>
                 </div>
                 <div id="icons">
-                    <div id="icon1" className="icon">
-                        <a href="https://www.instagram.com/"><img src={InstaImage} alt="Instagram" className="whiteIcon"/></a>
-                    </div>
-                    <div id="icon2" className="icon">
-                        <a href="https://www.linkedin.com/"><img src={LinkedImage} alt="Facebook" className="whiteIcon"/></a>
-                    </div>
-                    <div id="icon3" className="icon">
-                        <a href="https://twitter.com/"><img src={TwitterImage} alt="Twitter" className="whiteIcon"/></a>
-                    </div>
+                    < IconsSocialMedia className="whiteIcon" />
                 </div>
             </div>
             <div id="grupos">
@@ -50,6 +53,6 @@ export const Footer = () => {
             <div  id="direitos">
                 <p>©{new Date().getFullYear()} Josimar Ferreira</p>
             </div>
-        </div>
+        </footer>
     )
 }

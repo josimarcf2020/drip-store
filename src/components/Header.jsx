@@ -1,7 +1,8 @@
 import "../styles/Header.css"
 import buyImage     from '../assets/images/buy.svg'
-import searchImage  from '../assets/images/search.svg'
 import { Logo } from './Logo';
+import { SearchBarr } from "./SearchBarr";
+import { NavBarr } from "./NavBarr";
 
 export const Header = () => {
     return (
@@ -11,14 +12,7 @@ export const Header = () => {
                     <div id='logoPesquisa'>
                         <Logo />
                         <div id="pesquisa">
-                            <div id="inputPesquisa">
-                                <div>
-                                    <input class="form-control me-2" type="search" placeholder="Pesquisar produto" aria-label="Search"/>
-                                </div>
-                                <div id='searchIcon'>
-                                    <img src={searchImage} alt="Imagem de uma lupa" />
-                                </div>
-                            </div>
+                            < SearchBarr placeholder="Pesquisar produtos" />
                             <div id="linkCadastrese">
                                 <a href="#">Cadastre-se</a>
                             </div>
@@ -26,31 +20,11 @@ export const Header = () => {
                     </div>
                 </div>
                 <div id="linha2">
-                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                        <div class="container-fluid">
-                            <a class="navbar-brand" href="#">Home</a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Produtos</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Categorias</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Meus Pedidos</a>
-                                </li>
-                            </ul>
-                            </div>
-                        </div>
-                    </nav>
+                    < NavBarr />
                 </div>
             </div>
             <div id="btEntrarCarrinho">
-                <div id="botaoEntrar">
+                <div id="containerbotaoEntrar">
                     <button id="btEntrar">Entrar</button>            
                 </div>
                 <div id="carrinhoDeCompras">
