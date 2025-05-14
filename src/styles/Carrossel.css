@@ -3,7 +3,7 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    width: 1440px;
+    width: 100%;
     height: 681px;
     position: absolute;
     margin-top: 194px;
@@ -17,22 +17,25 @@
     }
 
     #carouselExampleCaptions{
-        width: 1440px;
-        height: 681px;
+        width: 100%;
+        height: 100%;
         position: absolute;
-        margin-top: 194px;
 
         .carousel-inner{
-            width: 1440px;
-            height: 681px;
+            width: 100%;
+            height: 100%;
             position: absolute;
-            margin-top: 194px;
 
             .carousel-item{ 
-                width: 1440px;
-                height: 681px;
+                width: 100%;
+                height: 100%;
                 position: absolute;
-                margin-top: 194px;
+            }
+
+            img{
+                width: 100%;
+                height: 100%;
+                position: absolute;
             }
         }
     }
