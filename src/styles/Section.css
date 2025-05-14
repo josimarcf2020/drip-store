@@ -1,0 +1,11 @@
+#title{
+    font-size: 24px;
+    color: var(--dark-gray-2);
+}
+
+.sectionContent{
+    a{
+        color: var(--primary-color);
+        font-size: 18px;
+    }
+}
