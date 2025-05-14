@@ -1,0 +1,39 @@
+#carrossel{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    width: 1440px;
+    height: 681px;
+    position: absolute;
+    margin-top: 194px;
+
+    #carrossel-indicators{
+        width: 100%;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #carouselExampleCaptions{
+        width: 1440px;
+        height: 681px;
+        position: absolute;
+        margin-top: 194px;
+
+        .carousel-inner{
+            width: 1440px;
+            height: 681px;
+            position: absolute;
+            margin-top: 194px;
+
+            .carousel-item{ 
+                width: 1440px;
+                height: 681px;
+                position: absolute;
+                margin-top: 194px;
+            }
+        }
+    }
+}

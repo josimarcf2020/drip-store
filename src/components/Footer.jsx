@@ -7,7 +7,7 @@ export const Footer = () => {
     const informacoes = [
         {"text":"Sobre Drip-Store", "link":"/sobre"}, 
         {"text":"Segurança", "link":"/seguranca"}, 
-        {"text":"Whishlist", "link":"/wishlist"}, 
+        {"text":"Wishlist", "link":"/wishlist"}, 
         {"text":"Blog", "link":"/blog"}, 
         {"text":"Trabalhe conosco", "link":"/trabalhe-conosco"}, 
         {"text":"Meus Pedidos", "link":"/meus-pedidos"}
@@ -20,24 +20,24 @@ export const Footer = () => {
         {"text":"Tênis", "link":"/tenis"}
     ]
     return (
-        <footer id='footer'>
+        <footer id="footer">
             <div id="col1">
                 <div id="logo-container">
-                    < Logo className="whiteIcon"/>                
+                    <Logo className="whiteIcon"/>                
                 </div>
                 <div id="text">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium unde mollitia error, perspiciatis fugiat neque nobis. Quas blanditiis illum porro cupiditate, vel, natus molestias rerum deleniti nisi, atque accusamus repellat.</p>
                 </div>
                 <div id="icons">
-                    < IconsSocialMedia className="whiteIcon" />
+                    <IconsSocialMedia className="whiteIcon" />
                 </div>
             </div>
             <div id="grupos">
                 <div className='grupo' id="coluna1">
-                    < Informations title="Informações" informations={ informacoes } />
+                    <Informations title="Informações" informations={ informacoes } />
                 </div>
                 <div className='grupo' id="coluna2">
-                    < Informations title="Categorias" informations={ informacoes1 } />
+                    <Informations title="Categorias" informations={ informacoes1 } />
                 </div>
                 <div id="coluna3" className="grupo">
                     <div className="informationsTitle">
@@ -50,7 +50,7 @@ export const Footer = () => {
                 </div>
             </div>
             <div id="linha"><hr /></div>
-            <div  id="direitos">
+            <div id="direitos">
                 <p>©{new Date().getFullYear()} Josimar Ferreira</p>
             </div>
         </footer>

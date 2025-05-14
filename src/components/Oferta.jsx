@@ -1,19 +1,11 @@
-import "../styles/Layout.css";
-import Ornamento from "../assets/images/Ornament 11.svg";
-import SnearkerImage from "../assets/images/White-Sneakers.svg";
-import { Header } from "./Header";
-import { Footer } from "./Footer";
+import React from 'react';
+import SnearkerImage from '../assets/images/White-Sneakers.svg';    
+import Ornamento from '../assets/images/Ornament 11.svg';
+import '../styles/Oferta.css';
 
-export const Layout = ({ children }) => {
+export const Oferta = () => {
     return (
-        <>
-            <Header />
-            { children }
-            <Footer />
-        </>
-        
-
-        /*<div id="containerLayout">
+        <div id="containerLayout">
             <div id="containerOfertaGeral">
                 <div id="containerOferta">
                     <div id="textoOferta">
@@ -30,6 +22,6 @@ export const Layout = ({ children }) => {
                     <img id="sneakerImage" src={SnearkerImage} alt="Imagem de tênis" />                            
                 </div>
             </div>
-        </div>*/
+        </div>
     )
 }

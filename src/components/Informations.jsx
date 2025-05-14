@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import "../styles/Informations.css"
 
 
@@ -9,8 +9,8 @@ export const Informations = ({ title, informations }) => {
                 <strong>{title}</strong>
             </div>
             <div className="informations">
-                {informations.map((info, index) => (
-                    <a href="{info.link}"><p key={index}>{info.text}</p></a>
+                {informations.map((info) => (
+                    <a href={info.link} key={info.link}><p>{info.text}</p></a>
                 ))}
             </div>
         </>
