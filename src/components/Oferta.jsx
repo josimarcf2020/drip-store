@@ -1,9 +1,8 @@
-import React from 'react';
 import SnearkerImage from '../assets/images/White-Sneakers.svg';    
 import Ornamento from '../assets/images/Ornament 11.svg';
 import '../styles/Oferta.css';
 
-export const Oferta = () => {
+const Oferta = () => {
     return (
         <div id="containerLayout">
             <div id="containerOfertaGeral">
@@ -25,3 +24,5 @@ export const Oferta = () => {
         </div>
     )
 }
+
+export default Oferta;

@@ -3,98 +3,123 @@
     width: 1440px;
     height: 681px;
     position: absolute;
-    margin-top: 194px;
     background-color: var(--light-gray-3);
+}
 
-    #containerOfertaGeral{
-        display: flex;
-        width: 1303px;
-        height: 398px;
-        position: absolute;
-        margin-top: 32px;
-        margin-left: 100px;
-        padding-top: 20px;
+#containerLayout 
+#containerOfertaGeral{
+    display: flex;
+    width: 1303px;
+    height: 398px;
+    position: absolute;
+    margin-top: 32px;
+    margin-left: 100px;
+    padding-top: 20px;
+}
 
-        #containerOferta{
+#containerLayout 
+#containerOfertaGeral
+#containerOferta{
             width: 1303px;
             height: 398px;
             margin-top: 32px;
             position: absolute;
             padding-top: 20px;
+}
 
-            #textoOferta{
-                width: 510px;
-                height: 352px;
-                position: absolute;
-                margin-top: 32px;
-                padding-top: 20px;
+#containerLayout 
+#containerOfertaGeral
+#containerOferta
+#textoOferta{
+    width: 510px;
+    height: 352px;
+    position: absolute;
+    margin-top: 32px;
+    padding-top: 20px;
+}
 
-                #sobreOferta{
-                    width: 280px;
-                    height: 24px;
-                    position: absolute;
-                    font-weight: 700;
-                    font-size: 16px;
-                    line-height: 24px;
-                    letter-spacing: 0.75px;
-                    color: var(--warning-color);
-                }
+#containerLayout 
+#containerOfertaGeral
+#containerOferta
+#sobreOferta{
+    width: 280px;
+    height: 24px;
+    position: absolute;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.75px;
+    color: var(--warning-color);
+}
 
-                #tituloOferta{
-                    width: 520px;
-                    height: 132px;
-                    position: absolute;
-                    margin-top: 8px;
-                    font-weight: 800;
-                    font-size: 64px;
-                    line-height: 66px;
-                    letter-spacing: 1px;
-                    padding-top: 20px;
-                    color: var(--dark-gray);
-                }
+#containerLayout 
+#containerOfertaGeral
+#containerOferta
+#tituloOferta{
+    width: 520px;
+    height: 132px;
+    position: absolute;
+    margin-top: 8px;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 66px;
+    letter-spacing: 1px;
+    padding-top: 20px;
+    color: var(--dark-gray);
+}
 
-                #descricaoOferta{
-                    width: 495px;
-                    height: 68px;
-                    position: absolute;
-                    margin-top: 170px;
-                    font-weight: 400;
-                    font-size: 18px;
-                    line-height: 34px;
-                    letter-spacing: 0.75px;
-                    padding-top: 20px;
-                }
+#containerLayout 
+#containerOfertaGeral
+#containerOferta
+#descricaoOferta{
+    width: 495px;
+    height: 68px;
+    position: absolute;
+    margin-top: 170px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 34px;
+    letter-spacing: 0.75px;
+    padding-top: 20px;
+}
 
-                #botaoVerOferta{
-                    position: absolute;
-                    width: 220px;
-                    height: 48px;
-                    margin-top: 290px;
-                    border-radius: 10px;
-                    background-color: var(--primary-color);
-                }
-            }
-        }
+#containerLayout 
+#containerOfertaGeral
+#containerOferta
+#botaoVerOferta{
+    position: absolute;
+    width: 220px;
+    height: 48px;
+    margin-top: 290px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+}
 
-        #ornamento{
-            width: 140px;
-            height: 140px;
-            position: absolute;
-            margin-top: 32px;
-            margin-left: 1123px;
-            opacity: 40%;
-            color: var(--warning-color);
-        }
+#containerLayout 
+#containerOfertaGeral
+#ornamento{
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    margin-top: 32px;
+    margin-left: 1123px;
+    opacity: 40%;
+    color: var(--warning-color);
+}
 
-        #containerSneaker{
-            width: 733.51px;
-            height: 431.61px;
-            position: absolute;
+#containerLayout 
+#containerSneaker{
+    width: 1440px;
+    height: 681px;
+    margin-left: 70px;
+    position: absolute;
+}
 
-            #sneakerImage{
-                rotate: 19,34deg;
-                margin-left: 400.25px;
-            }
-        }
-    }
+#containerLayout 
+#containerSneaker
+#sneakerImage{
+    width: 800px;
+    height: 100%;
+    rotate: 19,34deg;
+    margin-left: 400.25px;
 }
