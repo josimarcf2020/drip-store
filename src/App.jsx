@@ -2,16 +2,12 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
-import { Carrossel } from './components/Carrossel'
-import { Footer } from './components/Footer'
-import { Header } from './components/Header'
+import AppRoutes from './routes/Routes'
 
 function App() {
   return (
     <>
-      <Header />
-      <Carrossel />
-      <Footer />
+      <AppRoutes />
     </>
   )
 }
