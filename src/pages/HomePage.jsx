@@ -2,7 +2,7 @@ import React from 'react';
 import { Carrossel } from '../components/Carrossel';
 import Collections from '../components/Collections';
 
-const Home = () => {
+const HomePage = () => {
     return (
         <div>
             <Carrossel />
@@ -10,4 +10,4 @@ const Home = () => {
         </div>
     );
 };
-export default Home;
+export default HomePage;

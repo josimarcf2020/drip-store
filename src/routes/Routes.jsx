@@ -4,7 +4,7 @@ import { Header } from '../components/Header.jsx';
 import { Footer } from '../components/Footer.jsx';
 import { Layout } from '../layouts/Layout.jsx';
 import ProductListingPage from '../pages/ProductListingPage.jsx';
-import Home from '../pages/Home.jsx';
+import Home from '../pages/HomePage.jsx';
 import { PageNotFound } from '../pages/PageNotFound.jsx';
 
 const AppRoutes = () => {
