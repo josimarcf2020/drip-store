@@ -1,129 +1,178 @@
-#footer{
-    position: absolute;
-    width: 1440px;
-    height: 454px;
+/* Estilos base (Mobile-first) para o Footer */
+#footer {
     background-color: var(--dark-gray);
-    margin-bottom: 100px;
-    color: var(--text-color);
+    color: var(--text-color, #fff); /* Fallback para text-color */
+    padding: 40px 20px;
     display: flex;
-    padding-top: 72px;
-
-    #logo-container{
-        width: 253px;
-        height: 44px;
-        margin-left: 104px;
-    }
-
-    #text{
-        width: 307px;
-        height: 78px;
-        margin-top: 79px;
-        margin-left: 104px;
-        font-size: 16px;
-        font-weight: 400;
-    }
-
-    #icons{
-        width: 124.12px;
-        height: 20.53px;
-        margin-left: 104px;
-        margin-top: 79px;
-        left: 104px;
-        display: flex;
-        gap: 20px;
-
-        .icon{
-            width: 20.53px;
-            height: 20.53px;
-            margin-right: 20px;
-            cursor: pointer;
-        }
-
-    }
-
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    /* Importante: remover qualquer position: absolute ou fixed daqui */
 }
 
-.whiteIcon{
+/* Seção de contato/logo */
+.footer-contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 350px; /* Limita largura em telas pequenas */
+}
+
+#footer #logo-container {
+    max-width: 250px; /* Exemplo */
+    width: 100%; /* Para ser responsivo */
+}
+#footer #logo-container img { /* Se o logo for uma imagem */
+    max-width: 100%;
+    height: auto;
+}
+
+#footer #text {
+    font-size: 0.9rem; /* Ajuste conforme necessário */
+    line-height: 1.6;
+    max-width: 100%; /* Para não exceder o container */
+}
+
+#footer #icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#footer #icons .icon {
+    width: 24px; /* Tamanho consistente */
+    height: 24px;
+    cursor: pointer;
+}
+
+.whiteIcon {
     filter: brightness(0) invert(1);
 }
 
-#grupos{
-    position: absolute;
+/* Container para as colunas de informações */
+#footer-info-columns {
     display: flex;
+    flex-direction: column; /* Empilhado em mobile */
+    gap: 30px;
+    width: 100%;
+    align-items: center; /* Centraliza colunas em mobile */
 }
 
-#coluna1{
-    position: absolute;
-    display:block;
-    width: 135px;
-    height: 278px;
-    margin-left: 612px;    
-    
-    #group8035-1{
-        padding-bottom: 30px;
-    }
+/* Estilo para cada coluna individual de informação */
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza conteúdo da coluna em mobile */
+    width: 100%;
+    max-width: 250px; /* Limita largura de cada coluna em mobile */
 }
 
-.informationsTitle{
-    padding-bottom: 30px;
+/* Estilos para .informationsTitle e .informations-list (do Informations.css)
+   podem ser ajustados aqui se necessário para o contexto do footer. */
+.footer-column .informationsTitle {
+    color: var(--white, #fff); /* Garante que o título seja branco */
+    margin-bottom: 15px;
+    font-size: 1.1rem; /* Exemplo de ajuste */
 }
 
-.informations{
-    a{
-        text-decoration: none;
-        color: var(--white);
-        font-size: 16px;
-        font-weight: 400;
-    }
+.footer-column .informations-list { /* Supondo que Informations.jsx renderiza uma ul com esta classe */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.footer-column .informations-list li {
+    margin-bottom: 8px;
+}
+.footer-column .informations-list a {
+    color: var(--text-color, #ccc); /* Cor dos links no footer */
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.footer-column .informations-list a:hover {
+    color: var(--primary-color, #f0a040); /* Cor de hover */
+    text-decoration: underline;
 }
 
-#coluna2{
-    position: absolute;
-    width: 96px;
-    height: 240px;
-    margin-left: 849px;
-
-    #informationsTitle{
-        padding-bottom: 30px;
-    }
-
-    #group8034-1{
-        padding-bottom: 30px;
-    }
-}
-
-#coluna3{
-    position: absolute;
-    width: 233px;
-    height: 168px;
-    margin-left: 1053px;
-
-    #group53512{
-        padding-bottom: 30px;
-    }
-
-    #group53512-1{
-        padding-bottom: 30px;
-    }
-}
-
-#linha{
-    position: absolute;
-    width: 1240px;
+/* Linha separadora */
+#footer #linha {
+    width: 90%;
+    max-width: 1200px;
     height: 1px;
-    margin-left: 104px;
-    margin-top: 334px;
-    opacity: 30%;
-    background-color: var(--white);
+    opacity: 0.3;
+    background-color: var(--white, #fff);
+    margin: 20px auto; /* Centraliza e adiciona espaçamento */
 }
 
-#direitos{
-    position: absolute;
-    width: 1440px;
-    height: 24px;
-    margin-top: 340px;
+/* Direitos autorais */
+#footer #direitos {
+    font-size: 0.85rem;
+    width: 100%;
     text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--white);
+    color: var(--white, #fff);
+}
+
+/* Media Queries para responsividade do Footer */
+@media (min-width: 768px) {
+    #footer {
+        flex-direction: row; /* Seções principais lado a lado */
+        flex-wrap: wrap; /* Permite quebra se não couber */
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+        padding: 60px 40px;
+    }
+
+    .footer-contact-section {
+        flex-basis: 100%; /* Ocupa toda a largura inicialmente */
+        max-width: none;
+        align-items: flex-start;
+        margin-bottom: 40px; /* Espaço antes das colunas de info */
+    }
+    #footer #icons {
+        justify-content: flex-start;
+    }
+
+    #footer-info-columns {
+        flex-direction: row; /* Colunas lado a lado */
+        justify-content: space-around; /* Ou space-between */
+        align-items: flex-start;
+        flex-basis: 100%; /* Ocupa a largura para as colunas */
+        gap: 20px;
+    }
+
+    .footer-column {
+        flex: 1; /* Distribui espaço entre as colunas */
+        min-width: 180px; /* Largura mínima para cada coluna */
+        max-width: none;
+        align-items: flex-start;
+    }
+
+    /* Layout mais distribuído para telas maiores */
+    @media (min-width: 992px) {
+        .footer-contact-section {
+            flex-basis: 30%; /* Ex: 30% para contato */
+            margin-bottom: 0;
+        }
+        #footer-info-columns {
+            flex-basis: 65%; /* Ex: 65% para colunas de informação */
+            justify-content: flex-end; /* Alinha colunas à direita, por exemplo */
+        }
+    }
+
+    #footer #linha {
+        order: 1; /* Para garantir que a linha venha após o conteúdo principal do footer se necessário */
+        width: 100%;
+        margin: 30px 0;
+    }
+
+    #footer #direitos {
+        order: 2; /* Direitos por último */
+        width: 100%;
+    }
 }

@@ -1,0 +1,32 @@
+/* Estilos globais básicos podem ir aqui ou em um App.css / index.css */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.5;
+    background-color: #fff; /* Cor de fundo padrão */
+    color: #333; /* Cor de texto padrão */
+}
+
+/* Container principal do layout para implementar o sticky footer */
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o container ocupe pelo menos a altura da viewport */
+}
+
+/* Estilos para o conteúdo principal dentro do Layout */
+.main-content {
+    flex-grow: 1; /* Faz o conteúdo principal expandir e empurrar o footer para baixo */
+    /* min-height removido, pois flex-grow cuidará disso no contexto do layout-container */
+    padding: 20px; /* Espaçamento interno */
+    max-width: 1200px; /* Limita a largura máxima do conteúdo em telas grandes */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    box-sizing: border-box;
+    width: 100%; /* Garante que o padding não quebre o layout em larguras menores */
+}
+
+/* Você também precisará garantir que Header e Footer sejam responsivos. */

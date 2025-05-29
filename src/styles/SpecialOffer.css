@@ -1,74 +1,114 @@
-#special-offer{
-    width: 1340px;
-    height: 553px;
-    margin-top: 1107px;
-    margin-left: 100px;
-    margin-right: 100px;
-    background-color: var(--white);
-}
-
-#special-offer-image-elipse{
-    position: absolute;
-    width: 466px;
-    height: 466px;
-    margin-top: 107px;
-    margin-left: 120px;
-    z-index: 1;
-}
-
-#special-offer-product-image{
-    position: absolute;
-    width: 573px;
-    height: 330px;
-    margin-top: 137px;
-    margin-left: 52px;
-    z-index: 2;
-}
-
-#special-offer-content{
-    position: absolute;
-    width: 589px;
-    height: 341px;
-    margin-top: 145px;
-    margin-left: 692px;
-}
-
-#special-offer-title{
-    width: 116px;
-    height: 22px;
-    font-family: 'Inter';
-    font-style: bold;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 22px;
-    color: var(--black);
-    letter-spacing: 0.75px;
-    color: var(--primary-color);
-}
-
-#special-offer-title-destak{
-    width: 514px;
-    height: 100px;
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 50px;
-    letter-spacing: 1px;
-    color: var(--dark-gray-2);
-}
-
-#special-offer-button{
-    width: 114px;
-    height: 40px;
-    border-radius: 8px;
-    background-color: var(--primary-color);
-    color: var(--white);
-    font-family: 'Inter';
-    font-style: bold;
-    font-weight: 600;
-    font-size: 16px;
-    text-align: center;
+/* Estilos base (Mobile-first) */
+#special-offer {
+    display: flex;
+    flex-direction: column; /* Empilha imagem e conteúdo em telas pequenas */
     align-items: center;
-    justify-content: center;
+    padding: 20px;
+    gap: 20px; /* Espaço entre a seção da imagem e a seção de conteúdo */
+    background-color: #f9f9f9; /* Cor de fundo de exemplo */
+    border-radius: 8px;
+    margin: 20px 0; /* Espaçamento vertical */
+    overflow: hidden; /* Para garantir que a elipse não cause scroll indesejado */
 }
 
+#special-offer-image-container {
+    width: 100%;
+    max-width: 350px; /* Limita o tamanho da imagem em telas pequenas/médias */
+    position: relative; /* Para posicionamento absoluto da elipse */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#special-offer-product-image {
+    max-width: 80%; /* Ajuste para o tênis não ocupar toda a largura do container */
+    height: auto;
+    display: block;
+    z-index: 1; /* Garante que o produto fique sobre a elipse */
+}
+
+#special-offer-image-elipse {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Elipse ocupa a largura do container da imagem */
+    max-width: 400px; /* Limite para a elipse */
+    height: auto;
+    z-index: 0; /* Atrás da imagem do produto */
+    opacity: 0.7; /* Exemplo de opacidade */
+}
+
+#special-offer-content {
+    text-align: center; /* Centraliza o texto em telas pequenas */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Espaço entre os elementos de texto */
+}
+
+#special-offer-title {
+    font-size: 0.9rem;
+    color: #c50000; /* Cor de destaque para "Oferta especial" */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#special-offer-title-destak { /* Já tem a classe .special-offer-title, mas o ID é mais específico */
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.2;
+}
+
+#special-offer-description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #555;
+    max-width: 600px; /* Evita que o texto fique muito largo */
+}
+
+#special-offer-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #ff4500; /* Cor de exemplo para o botão */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#special-offer-button:hover {
+    background-color: #e03e00;
+}
+
+/* Telas maiores (ex: tablets e desktops a partir de 768px) */
+@media (min-width: 768px) {
+    #special-offer {
+        flex-direction: row; /* Lado a lado em telas maiores */
+        justify-content: space-around; /* Distribui espaço */
+        align-items: center;
+        padding: 40px;
+        text-align: left; /* Alinha texto à esquerda */
+    }
+
+    #special-offer-image-container {
+        flex-basis: 40%; /* Define a largura base para a imagem */
+        max-width: 450px;
+    }
+
+    #special-offer-content {
+        flex-basis: 55%; /* Define a largura base para o conteúdo */
+        align-items: flex-start; /* Alinha itens à esquerda */
+    }
+
+    #special-offer-title-destak {
+        font-size: 2.2rem; /* Maior em telas grandes */
+    }
+
+    #special-offer-description {
+        font-size: 1rem; /* Maior em telas grandes */
+    }
+}

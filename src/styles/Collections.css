@@ -1,24 +1,75 @@
+/* Estilos base (Mobile-first) para Collections */
 #collections-container {
-    display: block;
-    padding-top: 913px;
-    padding-left: 100px;
-}
-
-#collections-container #images-container{
-    gap: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 10px;
-    padding-top: 10px;
-}
-
-#collections-container #icones-container{
-    text-align: center;
-    padding-top: 50px;
+    display: flex; /* Alterado para flex para melhor controle do alinhamento interno */
+    position: relative;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo da seção */
+    width: 100%; /* Ocupa toda a largura disponível */
+    padding: 40px 20px; /* Padding responsivo (vertical, horizontal) */
+    box-sizing: border-box;
+    margin: 20px 0; /* Espaçamento vertical entre seções */
 }
 
 #collections-container .title {
-    font-size: 24px;
-    color: var(dark-gray-2);
+    font-size: 1.8rem; /* Tamanho de fonte base para mobile */
+    color: var(--dark-gray-2, #333); /* Cor com fallback */
     font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px; /* Espaço abaixo do título */
+}
+
+#collections-container #images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza as imagens se houver espaço extra */
+    gap: 15px; /* Espaço entre as imagens */
+    width: 100%;
+    max-width: 1200px; /* Limita a largura máxima do container de imagens */
+}
+
+/* Estilo para cada item de imagem dentro do #images-container.
+   Assumindo que cada imagem (ou card de coleção) seja um filho direto. */
+#images-container > * { /* Aplica a todos os filhos diretos */
+    flex-basis: calc(50% - 10px); /* Duas colunas em mobile, ajustando pelo gap */
+    max-width: calc(50% - 10px); /* Garante que não ultrapasse 50% */
+    /* Se for apenas <img>, você pode precisar de um wrapper para o aspect-ratio ou altura */
+    border-radius: 8px; /* Borda arredondada para as imagens/cards */
+    overflow: hidden; /* Para caso a imagem precise ser contida */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra sutil opcional */
+}
+
+#images-container img { /* Se os filhos diretos forem <img> tags */
+    width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+    display: block;
+}
+
+#collections-container #icones-container {
+    text-align: center;
+    margin-top: 40px; /* Espaço acima dos ícones/controles */
+    /* Estilos para os ícones (ex: botões de paginação, setas) podem ser adicionados aqui */
+}
+
+/* Media Queries para telas maiores */
+
+/* Tablets e telas médias */
+@media (min-width: 768px) {
+    #collections-container {
+        padding: 60px 40px; /* Maior padding */
+    }
+    #collections-container .title {
+        font-size: 2.2rem; /* Título maior */
+    }
+    #images-container > * {
+        flex-basis: calc(33.333% - 10px); /* Três colunas */
+        max-width: calc(33.333% - 10px);
+    }
+}
+
+/* Desktops e telas grandes */
+@media (min-width: 1024px) {
+    #images-container > * {
+        flex-basis: calc(25% - 12px); /* Quatro colunas, ajuste o gap se necessário */
+        max-width: calc(25% - 12px);
+    }
 }

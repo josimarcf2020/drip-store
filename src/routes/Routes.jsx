@@ -4,7 +4,7 @@ import { Header } from '../components/Header.jsx';
 import { Footer } from '../components/Footer.jsx';
 import { Layout } from '../layouts/Layout.jsx';
 import ProductListingPage from '../pages/ProductListingPage.jsx';
-import Home from '../pages/HomePage.jsx';
+import HomePage from '../pages/HomePage.jsx';
 import { PageNotFound } from '../pages/PageNotFound.jsx';
 
 const AppRoutes = () => {
@@ -12,8 +12,8 @@ const AppRoutes = () => {
     <BrowserRouter>
       <Header />  
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
+        <Route path="/" element={<HomePage />}>
+          <Route index element={<HomePage />} />
           <Route path="/products" element={<ProductListingPage />} />
           <Route path="*" element={<PageNotFound />} />
         </Route>

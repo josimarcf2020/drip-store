@@ -8,11 +8,11 @@ export const Informations = ({ title, informations }) => {
             <div className="informationsTitle">
                 <strong>{title}</strong>
             </div>
-            <div className="informations">
+            <ul className="informations-list"> {/* Usar uma lista para semântica */}
                 {informations.map((info) => (
-                    <a href={info.link} key={info.link}><p>{info.text}</p></a>
+                    <li key={info.link}><a href={info.link} className="information-link">{info.text}</a></li>
                 ))}
-            </div>
+            </ul>
         </>
     )
 }

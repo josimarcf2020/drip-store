@@ -1,3 +1,5 @@
+import '../styles/navbar.css'
+
 export const NavBarr = () => {
     return (
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
