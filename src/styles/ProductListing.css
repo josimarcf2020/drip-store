@@ -1,0 +1,87 @@
+body{
+    background-color: var(--light-gray-3);
+}
+
+#product_listing {
+    position: absolute;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+}
+
+#product_listing #product_title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 0.75px;
+}
+
+#product_container .col {
+    width: 292px;
+    height: 439px;
+}
+
+#product_container .col .card{
+    padding-top: 15px;
+}
+
+.card{
+    border: none;
+}
+
+#product_container .col #container_discount{
+    width: 96px;
+    height: 32px;
+    margin-left: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 29px;
+}
+
+#product_container .col #container_discount:has(#product_discount) {
+    background-color: #E7FF86; /* Cor de fundo para quando houver desconto. */
+}
+
+#product_discount{
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 14px;
+}
+    
+#product_container .col #container_image{
+    background-color: var(--white);
+}
+
+#product_container .col .card-body{
+    background-color: var(--light-gray-3);
+    padding: 0%;
+    padding-top: 10px;
+}
+
+#product_category{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.75;
+    line-height: 24px;
+}
+
+#product_name{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0.75px;
+}
+
+#prices{
+    display: flex;
+}
+
+#product_price{
+    width: 69px;
+    height: 38px;
+    text-decoration: line-through;
+    color: var(--light-gray);
+    border: 1px 1px 1px 1px;
+}

@@ -1,0 +1,34 @@
+#special-offer{
+    display: flex;
+    width: 1440px;
+    height: 553px;
+    margin-top: 1087px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: var(--white);
+}
+
+#special-offer-image-wrapper{
+    width: 466px;
+    height: 466px;
+    margin-right: 129px;
+    padding-top: 70px;    
+}
+
+#special-offer-image-container{
+    margin-top: 20px;
+}
+
+#special-offer-image-elipse{
+    z-index: 1;
+    position: absolute;
+    left: 129px;
+}
+
+#special-offer-product-image{
+    position: absolute;
+    width: 573px;
+    height: 330px;
+    left: 47px;
+    padding-top: 30px;
+}
