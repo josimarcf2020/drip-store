@@ -1,0 +1,74 @@
+#special-offer{
+    width: 1340px;
+    height: 553px;
+    margin-top: 1107px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: var(--white);
+}
+
+#special-offer-image-elipse{
+    position: absolute;
+    width: 466px;
+    height: 466px;
+    margin-top: 107px;
+    margin-left: 120px;
+    z-index: 1;
+}
+
+#special-offer-product-image{
+    position: absolute;
+    width: 573px;
+    height: 330px;
+    margin-top: 137px;
+    margin-left: 52px;
+    z-index: 2;
+}
+
+#special-offer-content{
+    position: absolute;
+    width: 589px;
+    height: 341px;
+    margin-top: 145px;
+    margin-left: 692px;
+}
+
+#special-offer-title{
+    width: 116px;
+    height: 22px;
+    font-family: 'Inter';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--black);
+    letter-spacing: 0.75px;
+    color: var(--primary-color);
+}
+
+#special-offer-title-destak{
+    width: 514px;
+    height: 100px;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    color: var(--dark-gray-2);
+}
+
+#special-offer-button{
+    width: 114px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-family: 'Inter';
+    font-style: bold;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
