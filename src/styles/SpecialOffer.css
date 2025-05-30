@@ -21,7 +21,7 @@
 }
 
 #special-offer-product-image {
-    max-width: 80%; /* Ajuste para o tênis não ocupar toda a largura do container */
+    max-width: 100%; /* Ajuste para o tênis não ocupar toda a largura do container */
     height: auto;
     display: block;
     z-index: 1; /* Garante que o produto fique sobre a elipse */

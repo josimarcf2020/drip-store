@@ -4,13 +4,12 @@ body{
 
 #product_listing {
     /* position: absolute; Removido para que o componente flua normalmente */
-    margin-bottom: 50px;
-    padding-bottom: 10px;
+    padding-top: 10px;
     padding-left: 150px;
     background-color: var(--light-gray-3); /* Se este fundo for específico para esta seção */
 }
 
-#product_listing #product_title{
+#product_title{
     font-weight: 700;
     font-size: 24px;
     line-height: 38px;
@@ -30,7 +29,7 @@ body{
     border: none;
 }
 
-#product_container .col #container_discount{
+#container_discount{
     width: 96px;
     height: 32px;
     margin-left: 20px;
@@ -48,9 +47,9 @@ body{
     font-weight: 700;
     font-size: 14px;
 }
-    
-#product_container .col #container_image{
-    background-color: var(--white);
+
+#container_image{
+    background-color: #FFFFFF;
 }
 
 #product_container .col .card-body{
