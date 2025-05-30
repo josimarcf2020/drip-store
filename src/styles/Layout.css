@@ -1,16 +1,3 @@
-/* Estilos globais básicos podem ir aqui ou em um App.css / index.css */
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    line-height: 1.5;
-    background-color: #fff; /* Cor de fundo padrão */
-    color: #333; /* Cor de texto padrão */
-}
-
 /* Container principal do layout para implementar o sticky footer */
 .layout-container {
     display: flex;
@@ -20,13 +7,11 @@ body {
 
 /* Estilos para o conteúdo principal dentro do Layout */
 .main-content {
-    flex-grow: 1; /* Faz o conteúdo principal expandir e empurrar o footer para baixo */
-    /* min-height removido, pois flex-grow cuidará disso no contexto do layout-container */
-    padding: 20px; /* Espaçamento interno */
-    max-width: 1200px; /* Limita a largura máxima do conteúdo em telas grandes */
-    margin: 0 auto; /* Centraliza o conteúdo */
+    display: block; /* Padrão para <main>, pode ser omitido */
+    width: 100%; /* Ocupa a largura do container pai */
+    max-width: 1440px; /* Limita a largura máxima em telas grandes, se desejado */
+    margin: 0 auto; /* Centraliza se max-width for atingido */
+    /* height: 681px; Removida altura fixa para permitir que o conteúdo determine a altura */
+    flex-grow: 1; /* Mantido para o sticky footer */
     box-sizing: border-box;
-    width: 100%; /* Garante que o padding não quebre o layout em larguras menores */
 }
-
-/* Você também precisará garantir que Header e Footer sejam responsivos. */

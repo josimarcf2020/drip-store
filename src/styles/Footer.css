@@ -1,41 +1,26 @@
 /* Estilos base (Mobile-first) para o Footer */
 #footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: var(--dark-gray);
     color: var(--text-color, #fff); /* Fallback para text-color */
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 30px;
-    width: 100%;
-    box-sizing: border-box;
-    /* Importante: remover qualquer position: absolute ou fixed daqui */
-}
-
-/* Seção de contato/logo */
-.footer-contact-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
-    max-width: 350px; /* Limita largura em telas pequenas */
+    /* left: 100px; Removido pois não tem efeito sem 'position' e padding é mais apropriado */
+    padding: 40px 20px 40px 100px; /* Adicionado padding: top right bottom left (com 100px à esquerda) */
 }
 
 #footer #logo-container {
     max-width: 250px; /* Exemplo */
     width: 100%; /* Para ser responsivo */
 }
-#footer #logo-container img { /* Se o logo for uma imagem */
-    max-width: 100%;
-    height: auto;
-}
 
 #footer #text {
+    width: 70%;
     font-size: 0.9rem; /* Ajuste conforme necessário */
-    line-height: 1.6;
-    max-width: 100%; /* Para não exceder o container */
+    line-height: 1.6vw;
+    max-width: 30.7vw; /* Para não exceder o container */
+    margin-top: 1vw;
 }
 
 #footer #icons {
@@ -125,7 +110,7 @@
         justify-content: space-between;
         align-items: flex-start;
         text-align: left;
-        padding: 60px 40px;
+        padding: 60px 40px 60px 100px; /* Ajustado para manter o padding-left de 100px */
     }
 
     .footer-contact-section {

@@ -5,9 +5,8 @@
     flex-direction: column;
     align-items: center; /* Centraliza o conteúdo da seção */
     width: 100%; /* Ocupa toda a largura disponível */
-    padding: 40px 20px; /* Padding responsivo (vertical, horizontal) */
     box-sizing: border-box;
-    margin: 20px 0; /* Espaçamento vertical entre seções */
+    padding-left: 100px;
 }
 
 #collections-container .title {
