@@ -1,9 +1,11 @@
-import React from 'react';
-const Products = () => {
+import { ProductsFilterBy } from '../components/ProductsFilterBy';
+
+const ProductsListingPage = () => {
     return (
-        <div>
-            <h1>Products</h1>
+        <div id='children'>
+            <ProductsFilterBy />
         </div>
     );
 };
-export default Products;
+
+export default ProductsListingPage;

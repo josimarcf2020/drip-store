@@ -1,0 +1,65 @@
+/* d:\Cursos\GT2.0\projetos\drip-store\src\styles\ProductsFilterBy.css */
+
+.products-filter-layout {
+    display: flex;
+    gap: 20px; /* Espaço entre a barra de filtros e a listagem de produtos */
+    padding: 20px; /* Espaçamento geral da página de listagem */
+    /* Se você estiver usando variáveis CSS globais para cores, use-as aqui */
+    /* background-color: var(--light-gray-background, #f4f4f4); */
+}
+
+.filters-sidebar {
+    flex: 0 0 250px; /* Largura fixa para a barra de filtros, não cresce, não encolhe */
+    padding: 15px;
+    border: 1px solid #e0e0e0; /* Cor de borda sutil */
+    border-radius: 8px;
+    background-color: var(--white, #fff); /* Fundo branco para a sidebar */
+    height: fit-content; /* Ajusta a altura ao conteúdo dos filtros */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Sombra leve opcional */
+}
+
+.filters-sidebar h3 {
+    margin-top: 0;
+    font-size: 1.4rem; /* Tamanho do título principal dos filtros */
+    color: var(--dark-gray-2, #333);
+    margin-bottom: 10px;
+}
+
+.filters-sidebar hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 15px 0;
+}
+
+.filter-section h4 {
+    font-size: 1.1rem; /* Tamanho dos subtítulos de cada seção de filtro */
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: var(--dark-gray, #555);
+}
+
+.filter-section .form-check {
+    margin-bottom: 8px; /* Espaçamento entre os checkboxes */
+}
+
+.filter-section .form-check-label {
+    font-size: 0.95rem; /* Tamanho do texto dos labels dos checkboxes */
+    color: var(--dark-gray, #555);
+}
+
+.products-listing-area {
+    flex-grow: 1; /* Faz com que a área de listagem de produtos ocupe o espaço restante */
+}
+
+/* Responsividade: Em telas menores, empilhar a barra de filtros e os produtos */
+@media (max-width: 768px) {
+    .products-filter-layout {
+        flex-direction: column; /* Empilha os elementos verticalmente */
+    }
+
+    .filters-sidebar {
+        flex-basis: auto; /* Permite que a largura seja automática quando empilhado */
+        width: 100%; /* Ocupa toda a largura disponível */
+        margin-bottom: 20px; /* Espaço abaixo da barra de filtros antes da listagem */
+    }
+}

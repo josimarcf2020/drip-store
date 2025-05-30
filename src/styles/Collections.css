@@ -5,8 +5,9 @@
     flex-direction: column;
     align-items: center; /* Centraliza o conteúdo da seção */
     width: 100%; /* Ocupa toda a largura disponível */
+    padding: 40px 20px; /* Padding responsivo (vertical, horizontal) para mobile */
     box-sizing: border-box;
-    padding-left: 100px;
+    background-color: var(--light-gray-1);
 }
 
 #collections-container .title {
@@ -29,8 +30,8 @@
 /* Estilo para cada item de imagem dentro do #images-container.
    Assumindo que cada imagem (ou card de coleção) seja um filho direto. */
 #images-container > * { /* Aplica a todos os filhos diretos */
-    flex-basis: calc(50% - 10px); /* Duas colunas em mobile, ajustando pelo gap */
-    max-width: calc(50% - 10px); /* Garante que não ultrapasse 50% */
+    flex-basis: calc(50% - 7.5px); /* Duas colunas em mobile, ajustando para gap de 15px */
+    max-width: calc(50% - 7.5px); /* Garante que não ultrapasse 50% */
     /* Se for apenas <img>, você pode precisar de um wrapper para o aspect-ratio ou altura */
     border-radius: 8px; /* Borda arredondada para as imagens/cards */
     overflow: hidden; /* Para caso a imagem precise ser contida */
@@ -54,7 +55,7 @@
 /* Tablets e telas médias */
 @media (min-width: 768px) {
     #collections-container {
-        padding: 60px 40px; /* Maior padding */
+        padding: 60px 40px; /* Padding ajustado para tablets */
     }
     #collections-container .title {
         font-size: 2.2rem; /* Título maior */
@@ -68,7 +69,7 @@
 /* Desktops e telas grandes */
 @media (min-width: 1024px) {
     #images-container > * {
-        flex-basis: calc(25% - 12px); /* Quatro colunas, ajuste o gap se necessário */
-        max-width: calc(25% - 12px);
+        flex-basis: calc(25% - 11.25px); /* Quatro colunas, ajustando para gap de 15px */
+        max-width: calc(25% - 11.25px);
     }
 }
