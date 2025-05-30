@@ -1,0 +1,16 @@
+nav {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os links quebrem linha */
+    justify-content: center;
+    gap: 15px; /* Espaço entre os links da navegação */
+    top: 1.34vw;
+    margin-bottom: 1vw;
+    left: 3vw;
+    width: 42.3vw;
+    height: 2.9vw;
+}
+
+.navbar-brand{
+    width: 49px;
+    color: var(--primary-color);
+}

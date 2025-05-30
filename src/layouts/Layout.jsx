@@ -4,12 +4,14 @@ import { Outlet } from "react-router-dom";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 
-export const Layout = () => {
+export const Layout = ({ children }) => { // Se você usa Outlet, children pode não ser necessário aqui
     return (
-        <>
-            <Header />
-            <Outlet />
+        <div className="layout-container"> {/* Adicionado wrapper */}
+            <Header />  
+            <main className="main-content">
+                {children ? children : <Outlet />} {/* Prioriza children, senão usa Outlet */}
+            </main>
             <Footer />
-        </>
+        </div>
     )
 }

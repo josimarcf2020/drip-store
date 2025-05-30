@@ -1,13 +1,13 @@
-import React from 'react';
-import { Carrossel } from '../components/Carrossel';
-import Collections from '../components/Collections';
-import { ProductListing } from '../components/ProductListing';
-import SpecialOffer from '../components/SpecialOffer';
+import '../styles/HomePage.css';
 
+import Carrossel from '../components/Carrossel.jsx';
+import Collections from '../components/Collections.jsx';
+import { ProductListing } from '../components/ProductListing.jsx';
+import SpecialOffer from '../components/SpecialOffer.jsx';
 
 const HomePage = () => {
     return (
-        <div>
+        <div id='children'>
             <Carrossel />
             <Collections />
             <ProductListing />

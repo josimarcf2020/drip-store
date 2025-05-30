@@ -4,7 +4,7 @@ import ImageCollection2 from '/collection/collection-2.png';
 import ImageCollection3 from '/collection/collection-3.png';
 import '../styles/Carrossel.css';
 
-export const Carrossel = () => {
+const Carrossel = () => {
     return (
         <div id="carrossel">
             <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
@@ -57,3 +57,5 @@ export const Carrossel = () => {
     )
 
 }
+
+export default Carrossel;

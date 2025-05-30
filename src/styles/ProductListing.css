@@ -1,14 +1,13 @@
 body{
-    background-color: var(--light-gray-3);
+    /* background-color: var(--light-gray-3); Movido para #product_listing ou CSS global */
 }
 
 #product_listing {
-    position: absolute;
-    margin-left: 100px;
-    margin-top: 100px;
+    /* position: absolute; Removido para que o componente flua normalmente */
     margin-bottom: 50px;
     padding-bottom: 10px;
-    padding-left: 100px;
+    padding-left: 150px;
+    background-color: var(--light-gray-3); /* Se este fundo for específico para esta seção */
 }
 
 #product_listing #product_title{

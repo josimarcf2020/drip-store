@@ -7,30 +7,17 @@ import { NavBarr } from "./NavBarr";
 export const Header = () => {
     return (
         <section id="header">
-            <div id="cabecalho">
-                <div id="linha1">
-                    <div id='logoPesquisa'>
-                        <Logo />
-                        <div id="pesquisa">
-                            < SearchBarr placeholder="Pesquisar produtos" />
-                            <div id="linkCadastrese">
-                                <a href="#">Cadastre-se</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="linha2">
-                    < NavBarr />
-                </div>
+            <div id="linha1">
+                <Logo />
+                <SearchBarr placeholder="Pesquisar produtos" />
+                <a id="linkCadastrar" href="#">Cadastre-se</a>
+                <button id="btEntrar">Entrar</button>                             
+                <img src={buyImage} alt="Imagem de carrinho de compras" />                
             </div>
-            <div id="btEntrarCarrinho">
-                <div id="containerbotaoEntrar">
-                    <button id="btEntrar">Entrar</button>            
-                </div>
-                <div id="carrinhoDeCompras">
-                    <img src={buyImage} alt="Imagem de carrinho de compras" />
-                </div>
-            </div>             
+            <div id="linha2">
+                < NavBarr />
+            </div>
+                         
         </section>
     );
 }

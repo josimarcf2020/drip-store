@@ -32,24 +32,24 @@ export const Footer = () => {
                     <IconsSocialMedia className="whiteIcon" />
                 </div>
             </div>
-            <div id="grupos">
-                <div className='grupo' id="coluna1">
+            <div id="footer-info-columns"> {/* Alterado ID para corresponder ao CSS */}
+                <div className='footer-column'> {/* Usando a classe padrão para colunas */}
                     <Informations title="Informações" informations={ informacoes } />
                 </div>
-                <div className='grupo' id="coluna2">
+                <div className='footer-column'> {/* Usando a classe padrão para colunas */}
                     <Informations title="Categorias" informations={ informacoes1 } />
                 </div>
-                <div id="coluna3" className="grupo">
+                <div className="footer-column"> {/* Usando a classe padrão para colunas */}
                     <div className="informationsTitle">
                         <strong>Contato</strong>
                     </div>
-                    <div className="informations">
+                    <div className="informations-list"> {/* Usando a mesma classe para consistência, mesmo sem links */}
                         <p>Av. Santos Dumont, 1510 - 1º andar - Aldeota, Fortaleza-CE, 60150-161</p>
                         <p>(85) 3051-3411</p>
                     </div>
                 </div>
             </div>
-            <div id="linha"><hr /></div>
+            <hr id="linha" /> {/* Movido hr para fora da div, ou pode ser estilizado como div */}
             <div id="direitos">
                 <p>©{new Date().getFullYear()} Josimar Ferreira</p>
             </div>

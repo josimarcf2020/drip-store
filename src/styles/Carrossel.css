@@ -1,49 +1,82 @@
 #carrossel{
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    width: 1440px;
-    height: 681px;
-    position: absolute;
-    margin-top: 194px;
-
+    width: 100%;
+    height: 80vh; /* Altura responsiva, ajustada por media queries abaixo */
+    max-height: 700px; /* Limite máximo de altura para telas muito altas */
+    min-height: 300px; /* Limite mínimo para telas pequenas */
+    position: relative; /* Torna este o contexto de posicionamento para filhos absolutos */
+    overflow: hidden; /* Garante que o conteúdo do carrossel não transborde */
     #carrossel-indicators{
         width: 100%;
         height: 24px;
         display: flex;
         justify-content: center;
         align-items: center;
+        /* Os estilos padrão do Bootstrap para indicadores geralmente são suficientes.
+           Para personalização avançada, pode-se adicionar:
+           position: absolute;
+           bottom: 10px;
+           z-index: 15; */
     }
 
     #carouselExampleCaptions{
         width: 100%;
         height: 100%;
-        position: absolute;
+        position: absolute; /* Para preencher o contêiner #carrossel */
 
         .carousel-inner{
             width: 100%;
             height: 100%;
-            position: absolute;
+            position: relative; /* Padrão Bootstrap: contexto para .carousel-item */
+            overflow: hidden;   /* Padrão Bootstrap: para conter os slides */
 
-            .carousel-item{ 
+            .carousel-item{
                 width: 100%;
                 height: 100%;
-                position: absolute;
+                /* position: absolute; Bootstrap gerencia isso e o display. */
+                /* Assegure que os itens preencham o .carousel-inner */
             }
             .carousel-item.active,
             .carousel-item-next,
             .carousel-item-prev{
                 display: block;
-                width: 100%;
-                height: 100%;
+                /* width e height 100% são herdados de .carousel-item */
             }
-            
+
             img{
                 width: 100%;
                 height: 100%;
-                position: absolute;
+            object-fit: contain; /* Mostra a imagem inteira, pode criar espaços vazios */
+                display: block;    /* Boa prática, embora Bootstrap .d-block também faça isso */
+                /* position: absolute; Removido - a imagem deve fluir dentro do .carousel-item */
             }
         }
+    }
+}
+
+/* Media queries para ajustar a altura do carrossel em diferentes tamanhos de tela */
+@media (max-width: 992px) { /* Telas médias (ex: tablets em paisagem) */
+    #carrossel {
+        height: 60vh;
+        max-height: 550px; /* Ajuste conforme necessário */
+    }
+}
+
+@media (max-width: 767px) { /* Telas pequenas (ex: tablets em retrato, celulares grandes) */
+    #carrossel {
+        height: 50vh;
+        max-height: 450px; /* Ajuste conforme necessário */
+        min-height: 250px; /* Ajuste conforme necessário */
+    }
+    /* Exemplo: Ocultar legendas em telas muito pequenas se desejado */
+    #carrossel #carouselExampleCaptions .carousel-caption {
+        display: none !important;
+    }
+}
+
+@media (max-width: 576px) { /* Telas extra pequenas (ex: celulares) */
+    #carrossel {
+        height: 45vh; /* Reduzir ainda mais para celulares */
+        max-height: 350px; /* Ajuste conforme necessário */
+        min-height: 200px; /* Ajuste conforme necessário */
     }
 }

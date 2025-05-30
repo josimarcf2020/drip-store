@@ -1,0 +1,43 @@
+.informations-container { /* Adicione esta classe ao elemento pai se precisar de um container */
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.informationsTitle {
+    font-size: 1.2rem; /* Tamanho base para o título */
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333; /* Cor de exemplo */
+}
+
+.informations-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.informations-list li {
+    margin-bottom: 8px;
+}
+
+.information-link {
+    font-size: 0.95rem; /* Tamanho base para os links */
+    color: #555; /* Cor de exemplo para os links */
+    text-decoration: none;
+    display: block; /* Para ocupar a largura e facilitar o clique */
+    padding: 5px 0;
+}
+
+.information-link:hover {
+    color: #007bff; /* Cor de exemplo no hover */
+    text-decoration: underline;
+}
+
+/* Media query para telas maiores, se necessário um layout diferente */
+@media (min-width: 768px) {
+    .informationsTitle {
+        font-size: 1.4rem; /* Aumenta um pouco o título */
+    }
+    /* Se você quiser que os links fiquem em colunas ou lado a lado em telas maiores,
+       adicione estilos aqui para .informations-list ou .informations-list li */
+}
