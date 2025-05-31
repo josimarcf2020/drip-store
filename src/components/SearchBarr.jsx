@@ -5,7 +5,7 @@ export const SearchBarr = ({ placeholder }) => {
     return (
         <div id="inputPesquisa">
             <div>
-                <input className="form-control me-2" type="search" placeholder={ placeholder } aria-label="Search"/>
+                <input className="form-control me-5" type="search" placeholder={ placeholder } aria-label="Search"/>
             </div>
             <div id='searchIcon'>
                 <img src={searchImage} alt="Imagem de uma lupa" />

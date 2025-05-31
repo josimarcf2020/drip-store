@@ -16,11 +16,12 @@
 }
 
 #footer #text {
-    width: 70%;
+    width: 70%; /* Mantém a largura relativa ao contêiner pai */
     font-size: 0.9rem; /* Ajuste conforme necessário */
-    line-height: 1.6vw;
-    max-width: 30.7vw; /* Para não exceder o container */
-    margin-top: 1vw;
+    line-height: 1.6;  /* Altura de linha relativa ao font-size para melhor legibilidade */
+    max-width: 35rem;  /* Largura máxima fixa em rem para evitar linhas muito longas */
+                       /* Ajuste este valor conforme o design (ex: 560px se 1rem=16px) */
+    margin-top: 0.75rem; /* Margem superior consistente (ex: 12px) */
 }
 
 #footer #icons {

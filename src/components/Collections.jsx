@@ -2,7 +2,10 @@ import ImageCollection1 from '/collection/collection-1.png';
 import ImageCollection2 from '/collection/collection-2.png';
 import ImageCollection3 from '/collection/collection-3.png';
 
-import ImageIconesGroup   from '../assets/images/Icones-group.svg'
+import ImageSkirtIcon     from '../assets/images/skirt.svg';
+import ImagePantsIcon     from '../assets/images/pants.svg';
+import ImageCapIcon       from '../assets/images/cap.svg';
+import ImageSneakerIcon   from '../assets/images/sneaker-icon.svg';
 
 import '../styles/Collections.css';
 
@@ -18,7 +21,12 @@ const Collections = () => {
             </div>
             <div id='icones-container'>
                 <h3 id='titulo-icones' className='title'>Coleções em destaque</h3>
-                <img src={ImageIconesGroup} alt="Camiseta" className='icone'/>
+                <div id="icones-container-icones">
+                    <img src={ ImageSkirtIcon }   alt="Ícone camiseta" className="align-bottom"/>                        
+                    <img src={ ImagePantsIcon }   alt="Ícone calça" className="align-bottom"/>
+                    <img src={ ImageCapIcon }     alt="Ícone boné"  className="align-bottom"/>
+                    <img src={ ImageSneakerIcon } alt="Ícone tênis"  className="align-bottom"/>
+                </div>
             </div>    
         </div>
     )

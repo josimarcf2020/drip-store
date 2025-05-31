@@ -1,34 +1,48 @@
 #pesquisa {
     display: flex;
-    flex-direction: column; /* Empilha input e botão em mobile, se necessário */
     align-items: center;
     position: relative; /* Mantido para o ícone de pesquisa */
     width: 100%;
-    max-width: 56vw; /* Limita a largura da pesquisa */
+    /* max-width: 56vw; */ /* Esta largura pode ser controlada pelo container no Header.css 
+                           ou defina um max-width em px/rem aqui se necessário, ex: max-width: 450px; */
 }
 
 #inputPesquisa {
     display: flex;
-    width: 100%;
+    width: 51vw;   
     position: relative; /* Para o ícone */
 }
 
 #inputPesquisa input {
-    width: 45vw;
-    height: 3.5vw; /* Ajuste a altura */
+    /* width: 45vw; */
+    width: 100%; /* Ocupa toda a largura do #inputPesquisa */
+    /* height: 3.5vw; */ 
+    height: 40px; /* Altura fixa em px ou rem (ex: 2.5rem) */
     border-radius: 8px;
     padding-left: 15px; /* Espaço para texto */
     padding-right: 45px; /* Espaço para o ícone */
     background-color: var(--light-gray-3);
     border: 1px solid var(--light-gray-2);
+    font-size: 0.9rem; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+#inputPesquisa input{
+    width: 50vw;
+}
+
+#inputPesquisa input::placeholder {
+    color: var(--dark-gray); /* Ou uma cor mais clara para o placeholder */
+    opacity: 0.8;
 }
 
 #searchIcon {
-    width: 1.8vw;
-    height: 1.8vw;
-    margin-top: 1.7vw;
-    right: 12%;
+    width: 20px;   /* Tamanho fixo para o ícone (ex: 1.25rem) */
+    height: 20px;  /* Tamanho fixo para o ícone */
     position: absolute;
+    top: 50%;
+    bottom: 50%;
+    right: 30px; /* Distância da borda direita (ex: 1rem) */
     cursor: pointer; /* Posiciona à direita dentro do input */
     transform: translateY(-50%);
+    /* color: var(--dark-gray); */ /* Defina a cor do ícone se for um SVG/fonte */
 }

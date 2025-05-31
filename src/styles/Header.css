@@ -105,7 +105,7 @@
         /* Se precisar de mais ajustes específicos para logo e pesquisa aqui */
     }
     #pesquisa{
-        max-width: 450px; /* Pode ajustar a largura da pesquisa */
+        max-width: 100%; /* Pode ajustar a largura da pesquisa */
     }
     #linha2 nav {
         margin-top: 10px;
