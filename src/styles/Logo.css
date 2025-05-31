@@ -1,23 +1,53 @@
 #logo {
-  width: 253px;
-  height: 44px;
   display: flex;
+  align-items: center; /* Alinha o ícone e o texto verticalmente */
+  gap: 0.5rem; /* Espaço entre o ícone e o texto da marca. Ajuste conforme necessário. (ex: 8px) */
+  height: 2.75rem; /* Altura base do logo (44px / 16px = 2.75rem). Ajuste conforme o design. */
+  width: auto; /* Permite que a largura se ajuste ao conteúdo */
   color: var(--primary-color);
+  text-decoration: none; /* Se o logo for um link */
 }
-  
-#vector{
-  width: 44px;
-  height: 44px;
-  display: flex;
+
+/* Estilo para o elemento do ícone/vetor.
+   Assumindo que #vector é um SVG ou um <img> tag diretamente. */
+#vector {
+  height: 100%; /* Faz o vetor ocupar toda a altura do #logo */
+  width: auto; /* Mantém a proporção original do vetor */
+  display: block; /* Boa prática para imagens/SVGs que devem escalar */
   color: var(--primary-color);
-  margin-top: 7px;
+  /* margin-top: 7px; Removido, o alinhamento é feito pelo flexbox em #logo */
 }
-  
-#marca p{
-  width: 212px;
-  height: 44px;
-  display: flex;
-  font-size: 36.4px;
+
+/* Container para o texto da marca, se houver um wrapper <div> ou <span> com id="marca" */
+#marca {
+  display: flex; /* Para alinhar o <p> se houver outros elementos dentro de #marca */
+  align-items: center;
+  height: 100%; /* Para alinhar verticalmente com o #vector */
+}
+
+#marca p {
+  /* font-size: 36.4px; */ /* Tamanho fixo original */
+  /* Usar clamp para um tamanho de fonte responsivo: clamp(MIN, PREFERRED, MAX) */
+  font-size: clamp(1.75rem, 4vw, 2.275rem); /* Ex: min 28px, pref 4% da largura da viewport, max 36.4px */
+  /* Alternativa mais simples: font-size: 2rem; e ajustar com media query se necessário */
   font-weight: 600;
+  line-height: 1; /* Ajuda a controlar a altura e o alinhamento vertical */
+  margin: 0; /* Remove margens padrão do parágrafo */
+  color: var(--primary-color); /* Garante a cor do texto */
+  white-space: nowrap; /* Impede que o nome da marca quebre em várias linhas */
+  /* width: 212px; Removido para permitir que o texto defina sua própria largura */
+  /* height: 44px; Removido, a altura será controlada pelo line-height e font-size */
+  /* display: flex; Removido do <p> pois não é um container flex */
 }
-  
+
+/* Opcional: Media query para ajustes finos em telas muito pequenas */
+@media (max-width: 360px) { /* Exemplo de breakpoint para celulares menores */
+  #logo {
+    height: 2.25rem; /* Reduz a altura do logo */
+    gap: 0.3rem; /* Reduz o espaçamento */
+  }
+  #marca p {
+    /* Ajuste o clamp ou defina um font-size menor se necessário */
+    font-size: clamp(1.5rem, 4vw, 1.8rem);
+  }
+}

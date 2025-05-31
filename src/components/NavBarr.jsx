@@ -1,23 +1,24 @@
+import { Link } from 'react-router-dom';
 import '../styles/navbar.css'
 
 export const NavBarr = () => {
     return (
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/">Home</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+            <div className="container-fluid">
+                <Link className="navbar-brand" to="/">Home</Link>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/products">Produtos</a>
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav">
+                        <li className="nav-item">
+                            <Link className="nav-link active" aria-current="page" to="/products">Produtos</Link>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Categorias</a>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/categories">Categorias</Link> {/* Exemplo: alterado href="#" para um Link */}
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Meus Pedidos</a>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/my-orders">Meus Pedidos</Link> {/* Exemplo: alterado href="#" para um Link */}
                         </li>
                     </ul>
                 </div>

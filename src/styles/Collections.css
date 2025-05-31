@@ -27,15 +27,16 @@
     max-width: 1200px; /* Limita a largura máxima do container de imagens */
 }
 
-/* Estilo para cada item de imagem dentro do #images-container.
-   Assumindo que cada imagem (ou card de coleção) seja um filho direto. */
 #images-container > * { /* Aplica a todos os filhos diretos */
+    display: flex;
     flex-basis: calc(50% - 7.5px); /* Duas colunas em mobile, ajustando para gap de 15px */
     max-width: calc(50% - 7.5px); /* Garante que não ultrapasse 50% */
     /* Se for apenas <img>, você pode precisar de um wrapper para o aspect-ratio ou altura */
     border-radius: 8px; /* Borda arredondada para as imagens/cards */
     overflow: hidden; /* Para caso a imagem precise ser contida */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra sutil opcional */
+    justify-content: center;
+    align-items: center;
 }
 
 #images-container img { /* Se os filhos diretos forem <img> tags */

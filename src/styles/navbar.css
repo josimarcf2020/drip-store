@@ -1,16 +1,24 @@
 nav {
     display: flex;
     flex-wrap: wrap; /* Permite que os links quebrem linha */
-    justify-content: center;
-    gap: 15px; /* Espaço entre os links da navegação */
-    top: 1.34vw;
-    margin-bottom: 1vw;
-    left: 3vw;
-    width: 42.3vw;
-    height: 2.9vw;
+    justify-content: center; /* Ou flex-start, dependendo do alinhamento desejado */
+    align-items: center; /* Alinha itens verticalmente se houver quebra de linha */
+    gap: 1rem; /* Espaço entre os links da navegação (15px = aprox 1rem) */
+    /* top: 1.34vw; */    /* Remova se não estiver usando position: absolute/relative intencionalmente */
+    /* left: 3vw; */     /* Remova se não estiver usando position: absolute/relative intencionalmente */
+    /* width: 42.3vw; */  /* Problemático. A largura deve ser auto ou 100% do container. */
+    width: auto;       /* Permite que a navegação se ajuste ao conteúdo */
+    /* height: 2.9vw; */ /* Problemático. A altura deve ser automática. */
+    height: auto;
+    /* margin-bottom: 1vw; */
+    margin-bottom: 0.5rem; /* Exemplo de margem inferior */
+    padding: 0.5rem 0; /* Adiciona um pouco de padding vertical se necessário */
 }
 
 .navbar-brand{
-    width: 49px;
+    /* width: 49px; */ /* Se for um logo/texto, deixe o tamanho ser automático ou use max-width */
     color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 1rem; /* Espaçamento se for o primeiro item antes dos links */
 }
