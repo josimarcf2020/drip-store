@@ -23,6 +23,7 @@ body{
 
 #product_container .col .card{
     padding-top: 15px;
+    cursor: pointer;
 }
 
 .card{
