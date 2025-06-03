@@ -21,7 +21,7 @@ export const Footer = () => {
     ]
     return (
         <footer id="footer">
-            <div id="col1">
+            <div className="footer-contact-section"> {/* Alterado de id="col1" para className */}
                 <div id="logo-container">
                     <Logo className="whiteIcon"/>                
                 </div>
