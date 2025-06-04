@@ -1,4 +1,5 @@
 import '../components/ProductDetail.jsx';
+import ProductDetail from '../components/ProductDetail.jsx';
 
 const ProductViewPage = () => {
     return (
