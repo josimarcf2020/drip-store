@@ -12,7 +12,10 @@ export const NavBarr = () => {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <Link className="nav-link active" aria-current="page" to="/products">Produtos</Link>
+                            <Link className="nav-link active" aria-current="page" to="/users">Usuários</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/products">Produtos</Link> {/* Exemplo: alterado href="#" para um Link */}
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/categories">Categorias</Link> {/* Exemplo: alterado href="#" para um Link */}
