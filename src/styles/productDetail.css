@@ -1,0 +1,99 @@
+.product-detail-container{
+    width: 100%;padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: var(--light-gray-3);
+}
+
+.product-description-container{
+    display: flex;
+    gap: 10px;
+}
+
+.carousel-container{
+    flex: 1;
+    display: flex;
+    width: 40%;
+}
+
+.detail-text-container{
+    width: 45%;
+    flex-direction: column;
+    padding-right: 10px;
+}
+
+.detail-title{
+    width: 30rem;
+    height: 72px;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.detail-subtitle{
+    width: 30rem;
+    height: 21px;
+    font-family: 'Text Tinny - Desktop';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+    vertical-align: middle;
+    color: var(--dark-gray-3);
+}
+
+.detail-reviews{
+    width: 30rem;
+    height: 21px;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.detail-prices-container{
+    display: flex;
+    width: 15rem;
+    justify-content: space-between;
+}
+
+/* Adicionado estilo para riscar o preço original, uma prática comum de UI. */
+.price {
+    text-decoration: line-through;
+    color: var(--dark-gray-3);
+}
+
+#detail-legend-size-buttons{
+    display: flex;
+    gap: 15px;
+    margin: 10px;
+}
+
+/* Corrigido de ID para classe, pois haverá múltiplos botões de tamanho. */
+.size-button{
+    width: 2rem;
+    height: 2rem;
+    border: 1px;
+    border-radius: 4px;
+    background-color: var(--light-gray-2);
+    color: black;
+}
+
+#detail-legend-colors-options{
+    display: flex;
+    gap: 15px;
+    margin: 10px;
+}
+
+/* Corrigido de ID para classe, pois haverá múltiplas opções de cor. */
+.color-option{
+    border-radius: 15px 15px 15px 15px;
+    border: 1px solid;
+    width: 2rem;
+    height: 2rem;
+}
+
+/* Corrigido de ID para classe para consistência e reusabilidade. */
+.buy-button{
+    width: 18rem;
+    height: 48px;
+    border-radius: 10px;
+    background-color: rgb(255, 174, 0);
+}

@@ -9,7 +9,6 @@
 .main-content {
     display: block; /* Padrão para <main>, pode ser omitido */
     width: 100%; /* Ocupa a largura do container pai */
-    max-width: 1440px; /* Limita a largura máxima em telas grandes, se desejado */
     margin: 0 auto; /* Centraliza se max-width for atingido */
     /* height: 681px; Removida altura fixa para permitir que o conteúdo determine a altura */
     flex-grow: 1; /* Mantido para o sticky footer */

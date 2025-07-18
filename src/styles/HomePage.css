@@ -1,4 +1,4 @@
-// body { display: block; } /* Removido por ser redundante e melhor colocado em um CSS global */
+body { display: block; } /* Removido por ser redundante e melhor colocado em um CSS global */
 
 #children {
     /* Se você precisar de estilos específicos para este container, adicione aqui.
