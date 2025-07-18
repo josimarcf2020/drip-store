@@ -70,11 +70,13 @@
 
 .filter-section .form-check {
     margin-bottom: 8px; /* Espaçamento entre os checkboxes */
+    margin-left: 20px;
 }
 
 .filter-section .form-check-label {
     font-size: 0.95rem; /* Tamanho do texto dos labels dos checkboxes */
     color: var(--dark-gray, #555);
+    padding-top: 15px;
 }
 
 .products-listing-area {
